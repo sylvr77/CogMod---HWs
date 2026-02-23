@@ -1,5 +1,6 @@
 Folder contents:
 - 
-- q6.ipynb
-- q7.py
+- q6.ipynb: jupyter notebook to answer q6
+- q7.py: python file to answer q7
+
 
