@@ -6,7 +6,7 @@ COGNITIVE MODELING - COGS 4210 - 01
 
 2025 02 12
 
-![Team Logo](HW1/media/cogModLogo.png)
+![Team Logo](hw1/media/cogModLogo.png)
 
 
 
