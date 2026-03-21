@@ -1,7 +1,7 @@
 data {
     int<lower=1> N;
     vector[N] x;
-    vector[N] y;
+    vector[N] y; 
 }
 
 parameters {
