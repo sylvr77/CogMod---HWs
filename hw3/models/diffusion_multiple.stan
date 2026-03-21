@@ -74,10 +74,6 @@ model {
     }
     
     
-
-
-
-
     // Likelihood
     for (n in 1:N) {
         // Condition 1
@@ -87,25 +83,22 @@ model {
                 // Hint: use something like param[id[n]] 
                 // to index the person-specific parameters ;)
 
-                target += wiener_lpdf(y[n] | a[j], tau[j], beta[j], v1[j]);
+                target += wiener_lpdf(y[n] | a[id[n]], tau[id[n]], beta[id[n]], v1[id[n]]);
+            } 
 
-
-            } else {
-                target += wiener_lpdf(y[n] | a[j], tau[j], 1 - beta[j], -v1[j]);
-
-
-
+            else {
+                target += wiener_lpdf(y[n] | a[id[n]], tau[id[n]], 1 - beta[id[n]], -v1[id[n]]);
             }
         }
 
         // Condition 2
         if (condition[n] == 2) {
             if (choice[n] == 1) {
-                target += wiener_lpdf(y[n] | a[j], tau[j], beta[j], v2[j]);
-
-            } else {
-                target += wiener_lpdf(y[n] | a[j], tau[j], 1 - beta[j], -v2[j]);
-
+                target += wiener_lpdf(y[n] | a[id[n]], tau[id[n]], beta[id[n]], v2[id[n]]);
+            } 
+            
+            else {
+                target += wiener_lpdf(y[n] | a[id[n]], tau[id[n]], 1 - beta[id[n]], -v2[id[n]]);
             }
         }
     }
