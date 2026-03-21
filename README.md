@@ -1,4 +1,4 @@
-Kurbiel Christopher, Silvestre Ronin
+Silvestre Ronin, Kurbiel Christopher
 
 Professor Radev
 
