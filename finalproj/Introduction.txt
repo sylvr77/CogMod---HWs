@@ -1,0 +1,7 @@
+Inspired by the applicable nature of the speed-dating problem in homework-4, the team set out to expand its analysis to better answer the question "which attribute(s) matter the most for obtaining a second date" through 3 key ways. 
+First, instead of only analyzing the attractiveness, fun, and shared-interests parameters, we would analyze all 6 parameters from the Kaggle dataset. 
+Next, this analysis is performed in the lens of constructing a Bayesian Logistic Regression model, which has great compatibility with our data since the 'match' parameter is binary and our system's posterior is simply the product of a Bernoulli likelihood and our prior. 
+This aspect of the project is centered around continued application of Stan's Monte Carlo Markov Chain algorithm. 
+After model convergence, we then generate new data and compare the most successful parameters using the artificial data to our ground truth to illuminate how robust our model is. 
+Lastly, we expand our modeling experimentation via developing a Hierarchical Bayesian Logistic model, compare the results of the two implementations, and prompt an LLM to see if it can generate a model that produces more accurate data than our own. 
+The ultimate aim of the project is to synthesize many different facets of cognitive modeling in an intriguing real-world scenario.
